@@ -13,7 +13,7 @@ function App() {
   }, []);
   const fetchRecipes = async () => {
     try {
-      const response = await fetch('http://localhost:8000/api/recipes/');
+      const response = await fetch('http://16.171.13.155:8000/api/recipes/');
       if (!response.ok) {
         throw new Error('Failed to fetch recipes');
       }
@@ -25,7 +25,7 @@ function App() {
   };
   const addRecipe = async (formData) => {
     try {
-      const response = await fetch('http://localhost:8000/api/recipes/', {
+      const response = await fetch('http://16.171.13.155:8000/api/recipes/', {
         method: 'POST',
         body: formData,
       });
@@ -39,7 +39,7 @@ function App() {
   };
   const deleteRecipe = async (recipeId) => {
     try {
-      const response = await fetch(`http://localhost:8000/api/recipes/${recipeId}/`, {
+      const response = await fetch(`http://16.171.13.155:8000/api/recipes/${recipeId}/`, {
         method: 'DELETE',
       });
       if (!response.ok) {
