@@ -1,4 +1,3 @@
-// AddRecipe.js
 import React, { useState } from 'react';
 function AddRecipe({ onAddRecipe }) {
     const [title, setTitle] = useState('');
