@@ -75,7 +75,8 @@ function App() {
       </button>
       <RecipeList recipes={recipes} onDeleteRecipe={deleteRecipe} onCardClick={openRecipeModal} />
       <RecipeModal isOpen={isRecipeModalOpen} onClose={closeRecipeModal} recipe={selectedRecipe} />
-      <AddRecipeFormModal isOpen={isAddRecipeModalOpen} onClose={closeAddRecipeModal} onAddRecipe={addRecipe} />
+      <AddRecipeFormModal isOpen={isAddRecipeModalOpen} onClose={closeAddRecipeModal}
+        onAddRecipe={addRecipe} />
     </div>
   );
 }
